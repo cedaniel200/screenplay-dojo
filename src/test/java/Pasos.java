@@ -9,7 +9,7 @@ public class Pasos {
      */
 
 
-    // TODO 15 crear el paquete steddefinition dentro del paquete base
+    // TODO 15 crear el paquete stepdefinition dentro del paquete base
     // TODO 16 Ejecutar el runner
     // TODO 17 Crear la definicion de los pasos (InicioSesionStepDefinition.java) utilizando el resultado de la ejecución del runner
     // TODO 18 Crear en InicioSesionStepDefinition el método setTheStage colocandole la anotación de método
@@ -36,9 +36,9 @@ public class Pasos {
 
     // TODO 52 Usar el método orComplainWith dentro de la implementacion del método con la anotacion @Then
 
-    // TODO 53 Limpiar la ejecuciones anteriores de la prueba(Ejecutar tarea clean)
-    // TODO 54 Ejecutar la prueba (Ejecutar la tarea test)
-    //  con datos validos y luego con datos invalidos
-    // TODO 55 Generar la documentación (Ejecutar la tarea aggregate)
+    // TODO 54 Limpiar la ejecuciones anteriores de la prueba(Ejecutar tarea clean)
+    // TODO 55 Ejecutar la prueba (Ejecutar la tarea test)
+    //  con datos válidos y luego con datos inválidos
+    // TODO 56 Generar la documentación (Ejecutar la tarea aggregate)
 
 }

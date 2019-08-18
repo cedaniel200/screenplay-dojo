@@ -18,12 +18,12 @@ public class Pasos {
 
     // TODO 33 Crear UsuarioBuilder.java dentro del paquete model
 
-    // TODO 34 Validar el estado del modelo usuario verificando que los string no estan vacios o nulos
+    // TODO 34 Validar el estado del modelo usuario verificando que los string no estan vacíos o nulos
     // TODO 35 Crear el paquetes exception dentro del paquete base
     // TODO 36 Crear la excepción UsuarioEstadoIlegalException.java dentro del paquete exception
 
     // TODO 37 Crear el paquetes util dentro del paquete base
-    // TODO 38 Crear la clase ValidadorString.java y mover el método que
+    // TODO 38 Crear la clase ValidadorString.java y mover el método que valida que los string no estan vacíos o nulos
 
     // TODO 40 Crear el paquetes question dentro del paquete base
     // TODO 41 Crear la question

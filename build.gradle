@@ -12,7 +12,7 @@ apply plugin: 'net.serenity-bdd.aggregator'     // Agrega las tareas relacionada
 sourceCompatibility = 1.8
 
 repositories {
-    // TODO 2 Agregar los repositorio
+    // TODO 2 Agregar los repositorios
     /*
     mavenCentral()
     mavenLocal()
