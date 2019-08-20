@@ -1,8 +1,5 @@
 public class Pasos {
-    
-    // TODO 14 crear el paquete stepdefinition dentro del paquete base
-    // TODO 15 Ejecutar el runner
-    // TODO 16 Crear la definicion de los pasos (InicioSesionStepDefinition.java) utilizando el resultado de la ejecución del runner
+
     // TODO 17 Crear en InicioSesionStepDefinition el método setTheStage colocandole la anotación de método
     //  @Before
     //  y la siguiente linea de código
