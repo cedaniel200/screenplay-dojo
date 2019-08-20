@@ -168,6 +168,9 @@ Al finalizar el dojo obtendras una estructura completa del proyecto similar a la
 ### Referencias
 
 http://thucydides.info/docs/serenity-staging/#_serenity_and_the_screenplay_pattern
+
 https://cucumber.io/docs/guides/bdd-tutorial/
+
 https://cucumber.io/docs/cucumber/api/
+
 https://cucumber.io/docs/gherkin/reference/
