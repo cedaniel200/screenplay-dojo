@@ -1,5 +1,3 @@
-import com.sun.xml.internal.bind.v2.TODO;
-
 public class Pasos {
     // TODO 19 Crear el paquete base de la aplicación : grupo "com.cedaniel200.screenplay" + nombre-app "dojo" = com.cedaniel200.screenplay.dojo
     // TODO 20 Crear el paquetes userinterface dentro del paquete base
