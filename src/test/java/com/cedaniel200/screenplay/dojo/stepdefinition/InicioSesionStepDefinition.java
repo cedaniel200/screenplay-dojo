@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class InicioSesionStepDefinition {
 
@@ -31,8 +32,9 @@ public class InicioSesionStepDefinition {
 
     @When("^Cesar se autentica$")
     public void cesarSeAutentica() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        theActorInTheSpotlight().attemptsTo(
+            IniciarSesion.conElUsuario(new Usuario("usuario", "contrasena"))
+        );
     }
 
     @Then("^Cesar debe ver la pagina de inicio$")

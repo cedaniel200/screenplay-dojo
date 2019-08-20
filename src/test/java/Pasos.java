@@ -1,8 +1,5 @@
 public class Pasos {
 
-    // TODO 23 Implemar el médoto con la anotación @When donde se debe:
-    //  Crear la tarea la cual debe recibir un usuario
-
     // TODO 31 Ejecutar la prueba
     // TODO 32 Mejorar la legibilidad usando un Builder
 
