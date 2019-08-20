@@ -40,9 +40,9 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
 }
+
 tasks.withType(Test) {
     systemProperties = System.properties
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
-// TODO 7 Confirar el proyecto para que continue en caso de que alguna prueba falle
-// gradle.startParameter.continueOnFailure = true
+ gradle.startParameter.continueOnFailure = true
