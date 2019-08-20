@@ -1,7 +1,4 @@
 public class Pasos {
-    // TODO 18 Implemar el médoto con la anotación @Given donde se debe:
-    //  Crear el actor
-    //  abrir la pagina web haciendo uso del page InicioSesionPage
 
     // TODO 23 Implemar el médoto con la anotación @When donde se debe:
     //  Crear la tarea la cual debe recibir un usuario
