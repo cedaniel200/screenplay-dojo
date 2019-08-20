@@ -1,5 +1,7 @@
 package com.cedaniel200.screenplay.dojo.stepdefinition;
 
+import com.cedaniel200.screenplay.dojo.model.Usuario;
+import com.cedaniel200.screenplay.dojo.task.IniciarSesion;
 import com.cedaniel200.screenplay.dojo.userinterface.InicioSesionPage;
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
