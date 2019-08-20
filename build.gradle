@@ -65,5 +65,5 @@ tasks.withType(Test) {
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
 */
-// TODO 7 Confirar el proyecto para que continue en caso de que alguna prueba falle
+// TODO 7 Configurar el proyecto para que continue en caso de que alguna prueba falle
 // gradle.startParameter.continueOnFailure = true
