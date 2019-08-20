@@ -12,8 +12,8 @@ de pasos relacionados entre sí, por lo cual solo debes buscar el tag donde esta
 
 Para lo anterior utilizar el comando:
 
-    pendiente - xxxx 
-    
+    git merge tag_name
+        
 ### Para correr el proyecto 
 
 Una vez terminado cada uno de los pasos del dojo se podrá ejecutar con el comando
