@@ -1,7 +1,7 @@
 public class Pasos {
-    // TODO 9 Crear el paquete base de la aplicación : grupo "com.cedaniel200.screenplay" + nombre-app "dojo" = com.cedaniel200.screenplay.dojo
-    // TODO 13 Crear el paquete runner dentro del paquede base
-    // TODO 14 Crear el runner (InicioSesion.java) utilizando las siguientes anotaciones de clase:
+    // TODO 11 Crear el paquete base de la aplicación : grupo "com.cedaniel200.screenplay" + nombre-app "dojo" = com.cedaniel200.screenplay.dojo
+    // TODO 12 Crear el paquete runner dentro del paquede base
+    // TODO 13 Crear el runner (InicioSesion.java) utilizando las siguientes anotaciones de clase:
     /*
       @RunWith(CucumberWithSerenity.class)
       @CucumberOptions(features = "src/test/resources/features/inicio_sesion.feature",
@@ -9,15 +9,15 @@ public class Pasos {
      */
 
 
-    // TODO 15 crear el paquete stepdefinition dentro del paquete base
-    // TODO 16 Ejecutar el runner
-    // TODO 17 Crear la definicion de los pasos (InicioSesionStepDefinition.java) utilizando el resultado de la ejecución del runner
-    // TODO 18 Crear en InicioSesionStepDefinition el método setTheStage colocandole la anotación de método
+    // TODO 14 crear el paquete stepdefinition dentro del paquete base
+    // TODO 15 Ejecutar el runner
+    // TODO 16 Crear la definicion de los pasos (InicioSesionStepDefinition.java) utilizando el resultado de la ejecución del runner
+    // TODO 17 Crear en InicioSesionStepDefinition el método setTheStage colocandole la anotación de método
     //  @Before
     //  y la siguiente linea de código
     //  OnStage.setTheStage(new OnlineCast());
 
-    // TODO 19 Implemar el médoto con la anotación @Given donde se debe:
+    // TODO 18 Implemar el médoto con la anotación @Given donde se debe:
     //  Crear el actor
     //  abrir la pagina web haciendo uso del page InicioSesionPage
 
