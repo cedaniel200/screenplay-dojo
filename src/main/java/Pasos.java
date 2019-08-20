@@ -1,9 +1,4 @@
 public class Pasos {
-
-    // TODO 28 Crear la instancia de la tarea creada usando el método instrumented
-    // TODO 29 Mapear lo elementos de la pagina de inicio de sesion de GitHub en InicioSesionPage
-    // TODO 30 Implementar el método performAs de la tarea usando los elementos mapeados
-
     // TODO 33 Crear UsuarioBuilder.java dentro del paquete model
 
     // TODO 34 Validar el estado del modelo usuario verificando que los string no estan vacíos o nulos
