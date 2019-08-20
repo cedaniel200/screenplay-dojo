@@ -1,8 +1,5 @@
 public class Pasos {
 
-    // TODO 39 Implemar el médoto con la anotación @Then donde se debe:
-    //  verificar si es visible la pagina de inicio
-
     // TODO 44 Limpiar la ejecuciones anteriores de la prueba(Ejecutar tarea clean)
     // TODO 45 Ejecutar la prueba (Ejecutar la tarea test)
     // TODO 46 Generar la documentación (Ejecutar la tarea aggregate)
