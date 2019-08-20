@@ -1,11 +1,19 @@
 package com.cedaniel200.screenplay.dojo.stepdefinition;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.actors.OnlineCast;
 
 public class InicioSesionStepDefinition {
+
+    @Before
+    public void setTheStage(){
+        OnStage.setTheStage(new OnlineCast());
+    }
 
     @Given("^(.*) quiere autenticarse$")
     public void quiereAutenticarse(String actor) {

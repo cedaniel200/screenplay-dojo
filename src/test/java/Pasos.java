@@ -1,10 +1,4 @@
 public class Pasos {
-
-    // TODO 17 Crear en InicioSesionStepDefinition el método setTheStage colocandole la anotación de método
-    //  @Before
-    //  y la siguiente linea de código
-    //  OnStage.setTheStage(new OnlineCast());
-
     // TODO 18 Implemar el médoto con la anotación @Given donde se debe:
     //  Crear el actor
     //  abrir la pagina web haciendo uso del page InicioSesionPage
@@ -28,5 +22,4 @@ public class Pasos {
     // TODO 55 Ejecutar la prueba (Ejecutar la tarea test)
     //  con datos válidos y luego con datos inválidos
     // TODO 56 Generar la documentación (Ejecutar la tarea aggregate)
-
 }
