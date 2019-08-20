@@ -1,7 +1,5 @@
 public class Pasos {
-    
-    // TODO 40 Crear el paquetes question dentro del paquete base
-    // TODO 41 Crear la question
+
     // TODO 42 Crear InicioPage.java dentro del paquere userinterface
     // TODO 43 Mapear el elemento con el que se verificara la visibilidad de la pagina de inicio
 
