@@ -1,5 +1,6 @@
 package com.cedaniel200.screenplay.dojo.stepdefinition;
 
+import com.cedaniel200.screenplay.dojo.exception.AutenticacionFallidaError;
 import com.cedaniel200.screenplay.dojo.question.LaPaginaDeInicio;
 import com.cedaniel200.screenplay.dojo.task.IniciarSesion;
 import com.cedaniel200.screenplay.dojo.userinterface.InicioSesionPage;
@@ -42,7 +43,8 @@ public class InicioSesionStepDefinition {
 
     @Then("^Cesar debe ver la pagina de inicio$")
     public void cesarDebeVerLaPaginaDeInicio() {
-        theActorInTheSpotlight().should(seeThat(LaPaginaDeInicio.esVisible()));
+        theActorInTheSpotlight().should(seeThat(LaPaginaDeInicio.esVisible())
+                .orComplainWith(AutenticacionFallidaError.class, "authentication failed"));
     }
 
 }

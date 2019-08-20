@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.annotations.Subject;
 
 import static com.cedaniel200.screenplay.dojo.userinterface.InicioPage.DASHBOARD;
 
-@Subject("the home page is visible")
+@Subject("the home page is visible ")
 public class LaPaginaDeInicio implements Question<Boolean> {
 
     @Override
