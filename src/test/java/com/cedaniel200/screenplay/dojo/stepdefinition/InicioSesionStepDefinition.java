@@ -15,9 +15,9 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 public class InicioSesionStepDefinition {
 
     private InicioSesionPage inicioSesionPage;
-    
+
     @Before
-    public void setTheStage(){
+    public void setTheStage() {
         OnStage.setTheStage(new OnlineCast());
     }
 
