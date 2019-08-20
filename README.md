@@ -14,6 +14,12 @@ Para lo anterior utilizar el comando:
 
     git merge tag_name
         
+En caso de que Git solicite un mensaje para el merge como se observa en la imagen.
+
+![merge con un tag](img/merge.png)
+
+puedes oprimir la tecla Escape **ESC** seguido de **:wq** y **Enter**.
+
 ### Para correr el proyecto 
 
 Una vez terminado cada uno de los pasos del dojo se podrá ejecutar con el comando
