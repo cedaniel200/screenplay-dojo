@@ -3,7 +3,6 @@ package com.cedaniel200.screenplay.dojo.stepdefinition;
 import com.cedaniel200.screenplay.dojo.question.LaPaginaDeInicio;
 import com.cedaniel200.screenplay.dojo.task.IniciarSesion;
 import com.cedaniel200.screenplay.dojo.userinterface.InicioSesionPage;
-import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -12,11 +11,10 @@ import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
-import static com.cedaniel200.screenplay.dojo.model.UsuarioBuilder.nombreDeUsuario;
+import static com.cedaniel200.screenplay.dojo.model.UsuarioBuilder.unUsuarioPorDefecto;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.core.Is.is;
 
 public class InicioSesionStepDefinition {
 
@@ -38,7 +36,7 @@ public class InicioSesionStepDefinition {
     @When("^Cesar se autentica$")
     public void cesarSeAutentica() {
         theActorInTheSpotlight().attemptsTo(
-                IniciarSesion.con(nombreDeUsuario("usuario").yContrasena("contrasena"))
+                IniciarSesion.con(unUsuarioPorDefecto())
         );
     }
 
