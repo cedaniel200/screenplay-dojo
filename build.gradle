@@ -26,13 +26,9 @@ buildscript {
         serenityVersion = '2.0.17'
         serenityCucumberVersion = '1.9.20'
     }
-    
-    // TODO 4 Agregar el plugin de sereniy a nuestro script de compilación, ya que, nuestro proyecto necesita usar esta biblioteca externa
-    /*
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:$rootProject.ext.serenityVersion")
     }
-    */
 }
 
 dependencies {
