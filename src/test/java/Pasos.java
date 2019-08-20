@@ -1,14 +1,5 @@
 public class Pasos {
-    // TODO 11 Crear el paquete base de la aplicación : grupo "com.cedaniel200.screenplay" + nombre-app "dojo" = com.cedaniel200.screenplay.dojo
-    // TODO 12 Crear el paquete runner dentro del paquede base
-    // TODO 13 Crear el runner (InicioSesion.java) utilizando las siguientes anotaciones de clase:
-    /*
-      @RunWith(CucumberWithSerenity.class)
-      @CucumberOptions(features = "src/test/resources/features/inicio_sesion.feature",
-      glue = {"com.cedaniel200.screenplay.dojo.stepdefinition"}, snippets = SnippetType.CAMELCASE)
-     */
-
-
+    
     // TODO 14 crear el paquete stepdefinition dentro del paquete base
     // TODO 15 Ejecutar el runner
     // TODO 16 Crear la definicion de los pasos (InicioSesionStepDefinition.java) utilizando el resultado de la ejecución del runner
