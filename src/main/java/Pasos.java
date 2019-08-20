@@ -1,8 +1,5 @@
 public class Pasos {
 
-    // TODO 42 Crear InicioPage.java dentro del paquere userinterface
-    // TODO 43 Mapear el elemento con el que se verificara la visibilidad de la pagina de inicio
-
 
     // TODO 47 Revisar la documentación
     // TODO 48 Agregar @Step("") o @Subject("") para mejorar la salida del reporte
