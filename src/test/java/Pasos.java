@@ -1,8 +1,5 @@
 public class Pasos {
 
-    // TODO 31 Ejecutar la prueba
-    // TODO 32 Mejorar la legibilidad usando un Builder
-
     // TODO 39 Implemar el médoto con la anotación @Then donde se debe:
     //  verificar si es visible la pagina de inicio
 

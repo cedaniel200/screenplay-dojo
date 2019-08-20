@@ -26,7 +26,7 @@ public class IniciarSesion implements Task {
         );
     }
 
-    public static IniciarSesion conElUsuario(Usuario usuario) {
+    public static IniciarSesion con(Usuario usuario) {
         return instrumented(IniciarSesion.class, usuario);
     }
 }

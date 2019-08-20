@@ -1,6 +1,4 @@
 public class Pasos {
-    // TODO 33 Crear UsuarioBuilder.java dentro del paquete model
-
     // TODO 34 Validar el estado del modelo usuario verificando que los string no estan vacíos o nulos
     // TODO 35 Crear el paquetes exception dentro del paquete base
     // TODO 36 Crear la excepción UsuarioEstadoIlegalException.java dentro del paquete exception
