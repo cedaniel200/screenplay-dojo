@@ -9,21 +9,16 @@ apply plugin: 'net.serenity-bdd.aggregator'     // Agrega las tareas relacionada
 sourceCompatibility = 1.8
 
 repositories {
-    // TODO 2 Agregar los repositorios
-    /*
     mavenCentral()
     mavenLocal()
     jcenter()
-     */
 }
 
 buildscript {
     repositories {
-        /*
         mavenCentral()
         mavenLocal()
         jcenter()
-         */
     }
     // TODO 3 Definir las propiedades adicionales para almacenar la version de nuestras dependencias
     /*
