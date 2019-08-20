@@ -32,8 +32,6 @@ buildscript {
 }
 
 dependencies {
-    // TODO 5 Agregar las dependencias de nuestro proyecto
-    /*
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
     testImplementation "org.slf4j:slf4j-simple:$rootProject.ext.slf4jVersion"
     testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
@@ -41,7 +39,6 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
-    */
 }
 
 // TODO 6 Pasar argumentos a nuestro entorno de pruebas. Lo anterior porque los Argumentos -D pasados a gradle no se propagan a las prueba
