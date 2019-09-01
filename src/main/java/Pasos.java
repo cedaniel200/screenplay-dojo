@@ -1,9 +1,4 @@
 public class Pasos {
-    // TODO 19 Crear el paquete base de la aplicación : grupo "com.cedaniel200.screenplay" + nombre-app "dojo" = com.cedaniel200.screenplay.dojo
-    // TODO 20 Crear el paquetes userinterface dentro del paquete base
-    // TODO 21 Crear el page InicioSesionPage.java dentro del paquete userinterface, heredando de PageObject
-    // TODO 22 Agregar la anotacion de clase @DefaultUrl("https://github.com/login")
-
     // TODO 24 Crear el paquetes task dentro del paquete base
     // TODO 25 Crear el paquetes model dentro del paquete base
     // TODO 26 Crear el modelo Usuario.java dentro del paquete model, con:
