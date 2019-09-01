@@ -1,6 +1,3 @@
-// TODO 9 Creamos la carpeta features
-// TODO 10 Creamos nuestro feature: inicio_sesion.feature con la siguiente estructura:
-
 Feature: Autenticar
   Yo como usuario de GitHub quiero autenticarme para porder hacer uso de las diferentes funcionalidades de la plataforma
 
