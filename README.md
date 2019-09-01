@@ -156,7 +156,7 @@ Al finalizar el dojo obtendras una estructura completa del proyecto similar a la
         Clases relacionadas con el modelo de dominio y sus respectivos builder cuando es necesario
     + task
         Clases que representan tareas que realiza el actor a nivel de proceso de negocio
-    + interacion
+    + interaction
         Clases que representan las interacciones directas con la interfaz de usuario
     + userinterface
         Page Objects y Page Elements. Mapean los objetos de la interfaz de usuario
