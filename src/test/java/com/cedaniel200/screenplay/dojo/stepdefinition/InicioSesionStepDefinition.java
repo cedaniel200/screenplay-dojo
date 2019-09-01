@@ -22,13 +22,13 @@ public class InicioSesionStepDefinition {
     }
 
 
-    @When("^Cesar se autentica$")
+    @When("^[a-z,A-Z]{1,50} se autentica$")
     public void cesarSeAutentica() {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Then("^Cesar debe ver la pagina de inicio$")
+    @Then("^[a-z,A-Z]{1,50} debe ver la pagina de inicio$")
     public void cesarDebeVerLaPaginaDeInicio() {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
