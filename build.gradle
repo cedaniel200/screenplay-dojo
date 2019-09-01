@@ -1,53 +1,37 @@
 group 'com.cedaniel200.screenplay'
 version '1.0-SNAPSHOT'
 
-// TODO 1 Agregar los plugins necesarios para nuestro proyecto
 apply plugin: 'java'                            // Agrega compilación de Java junto con capacidades de prueba y agrupación a un proyecto. Sirve de base para muchos de los otros complementos de Gradle de lenguaje JVM.
-/*
 apply plugin: 'idea'                            // Genera archivos que utiliza IntelliJ IDEA, lo que permite abrir el proyecto desde IDEA ( File- Open Project)
 apply plugin: 'eclipse'                         // Genera archivos que son utilizados por el IDE de Eclipse, lo que permite importar el proyecto a Eclipse  (File - Import…​ - Existing Projects into Workspace)
 apply plugin: 'net.serenity-bdd.aggregator'     // Agrega las tareas relacionadas con SerenityBDD entre ellas aggregate que nos permite generar la documentación
-*/
 
 sourceCompatibility = 1.8
 
 repositories {
-    // TODO 2 Agregar los repositorios
-    /*
     mavenCentral()
     mavenLocal()
     jcenter()
-     */
 }
 
 buildscript {
     repositories {
-        /*
         mavenCentral()
         mavenLocal()
         jcenter()
-         */
     }
-    // TODO 3 Definir las propiedades adicionales para almacenar la version de nuestras dependencias
-    /*
     ext {
         junitVersion = '4.12'
         slf4jVersion = '1.7.7'
         serenityVersion = '2.0.17'
         serenityCucumberVersion = '1.9.20'
     }
-    */
-    // TODO 4 Agregar el plugin de sereniy a nuestro script de compilación, ya que, nuestro proyecto necesita usar esta biblioteca externa
-    /*
     dependencies {
         classpath("net.serenity-bdd:serenity-gradle-plugin:$rootProject.ext.serenityVersion")
     }
-    */
 }
 
 dependencies {
-    // TODO 5 Agregar las dependencias de nuestro proyecto
-    /*
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
     testImplementation "org.slf4j:slf4j-simple:$rootProject.ext.slf4jVersion"
     testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
@@ -55,15 +39,10 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
-    */
 }
 
-// TODO 6 Pasar argumentos a nuestro entorno de pruebas. Lo anterior porque los Argumentos -D pasados a gradle no se propagan a las prueba
-/*
 tasks.withType(Test) {
     systemProperties = System.properties
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
-*/
-// TODO 7 Configurar el proyecto para que continue en caso de que alguna prueba falle
-// gradle.startParameter.continueOnFailure = true
+ gradle.startParameter.continueOnFailure = true
