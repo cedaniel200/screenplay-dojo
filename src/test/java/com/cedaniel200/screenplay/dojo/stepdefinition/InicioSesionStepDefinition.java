@@ -22,12 +22,11 @@ public class InicioSesionStepDefinition {
     }
 
     @Given("^(.*) quiere autenticarse$")
-    public void quiereAutenticarse(String actor) {
-        theActorCalled(actor).attemptsTo(
+    public void quiereAutenticarse(String actorName) {
+        theActorCalled(actorName).attemptsTo(
                 Open.browserOn(inicioSesionPage)
         );
     }
-
 
     @When("^[a-z,A-Z]{1,50} se autentica$")
     public void autenticar() {
@@ -40,5 +39,4 @@ public class InicioSesionStepDefinition {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
-
 }
