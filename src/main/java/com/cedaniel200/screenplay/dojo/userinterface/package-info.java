@@ -1,5 +1,6 @@
 /**
- *  Clases de UserInterface son Page Objects y Page Elements, las cuales mapean los objetos de la interfaz de usuario
+ *  Clases de UserInterface son Page Objects y Page Elements,
+ *  las cuales mapean los objetos de la interfaz de usuario
  *
  * @author cedaniel200
  */

@@ -1,5 +1,6 @@
 /**
- *  Clases de Exception represnetan las posibles excepciones técnicas y de negocios que se presentan durante la ejecución de las pruebas
+ *  Clases de Exception representan las posibles excepciones técnicas y de
+ *  negocios que se presentan durante la ejecución de las pruebas
  *
  * @author cedaniel200
  */

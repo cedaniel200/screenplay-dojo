@@ -1,5 +1,6 @@
 /**
- *  Clases de Interaction representan las interacciones directas con la interfaz de usuario
+ *  Clases de Interaction representan las interacciones directas con la
+ *  interfaz de usuario
  *
  * @author cedaniel200
  */
