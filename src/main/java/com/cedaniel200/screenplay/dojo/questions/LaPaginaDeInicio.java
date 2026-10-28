@@ -2,9 +2,11 @@ package com.cedaniel200.screenplay.dojo.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.annotations.Subject;
 
 import static com.cedaniel200.screenplay.dojo.userinterfaces.InicioPage.DASHBOARD;
 
+@Subject("the home page is visible")
 public class LaPaginaDeInicio implements Question<Boolean> {
 
     @Override
