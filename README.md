@@ -6,7 +6,9 @@ Para configurar el ambiente necesario para realizar este dojo puedes seguir la s
 
 https://cedaniel200.blogspot.com/2019/08/configurando-mi-ambiente-de.html 
 
-La guía del dojo está en [PASOS.md](PASOS.md): más de 50 pasos numerados y agrupados por bloque.
+La guía del dojo está en [PASOS.md](PASOS.md): 56 pasos numerados y agrupados por bloque. Los diez
+primeros son la preparación del entorno (la guía del blog enlazada arriba); del 11 en adelante, el
+taller.
 Si en algún momento te quedas atascado, no te preocupes: en la rama solucion encontrarás tags, y cada tag agrupa una serie
 de pasos relacionados entre sí, por lo cual solo debes buscar el tag donde está tu paso y seguir desde ahí.
 

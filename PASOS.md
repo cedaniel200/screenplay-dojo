@@ -1,7 +1,37 @@
 # Pasos del dojo
 
-Guía para resolver el taller. Los pasos están numerados en el orden recomendado: cada bloque
-termina con algo que se puede ejecutar y comprobar.
+Guía completa del taller, en el orden recomendado. Cada bloque termina con algo que se puede
+ejecutar y comprobar.
+
+> **Los pasos 1 a 10 son la preparación del entorno**: instalar JDK y Gradle, configurar el proyecto
+> y el build. Están desarrollados en la guía del blog enlazada en el README, y no se repiten aquí.
+
+## 11–18 · Esqueleto del proyecto
+
+- [ ] **11** Crear el paquete base de la aplicación: grupo `com.cedaniel200.screenplay` + nombre de app `dojo` → `com.cedaniel200.screenplay.dojo`.
+- [ ] **12** Crear el paquete `runner` dentro del paquete base.
+- [ ] **13** Crear la suite de pruebas (`InicioSesionTestSuite.java`) con las anotaciones de JUnit Platform:
+  ```java
+  @Suite
+  @IncludeEngines("cucumber")
+  @SelectClasspathResource("features")
+  @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.cedaniel200.screenplay.dojo.stepdefinition")
+  ```
+- [ ] **14** Crear el paquete `stepdefinition` dentro del paquete base.
+- [ ] **15** Ejecutar la suite.
+- [ ] **16** Crear la definición de los pasos (`InicioSesionStepDefinition.java`) a partir de lo que devuelve la ejecución.
+- [ ] **17** Crear en `InicioSesionStepDefinition` el método `setTheStage` con la anotación `@Before` y esta línea:
+  ```java
+  OnStage.setTheStage(new OnlineCast());
+  ```
+- [ ] **18** Implementar el método con la anotación `@Given`: crear el actor y abrir la página con `InicioSesionPage`.
+
+## 19–22 · Paquete base y página de login
+
+- [ ] **19** Confirmar el paquete base de la aplicación: `com.cedaniel200.screenplay.dojo`.
+- [ ] **20** Crear el paquete `userinterfaces` dentro del paquete base.
+- [ ] **21** Crear `InicioSesionPage.java` en `userinterfaces`, heredando de `PageObject`.
+- [ ] **22** Agregar la anotación de clase `@DefaultUrl("https://github.com/login")`.
 
 ## 23–30 · La tarea de autenticarse
 
