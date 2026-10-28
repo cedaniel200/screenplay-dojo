@@ -22,21 +22,23 @@ public class InicioSesionStepDefinition {
     }
 
     @Given("^(.*) quiere autenticarse$")
-    public void quiereAutenticarse(String actorName) {
-        theActorCalled(actorName).attemptsTo(
+    public void quiereAutenticarse(String actor) {
+        theActorCalled(actor).attemptsTo(
                 Open.browserOn(inicioSesionPage)
         );
     }
 
-    @When("^[a-z,A-Z]{1,50} se autentica$")
-    public void autenticar() {
+
+    @When("^Cesar se autentica$")
+    public void cesarSeAutentica() {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Then("^[a-z,A-Z]{1,50} debe ver la pagina de inicio$")
-    public void debeVerLaPaginaDeInicio() {
+    @Then("^Cesar debe ver la pagina de inicio$")
+    public void cesarDebeVerLaPaginaDeInicio() {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
+
 }
