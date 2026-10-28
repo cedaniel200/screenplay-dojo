@@ -1,5 +1,7 @@
 package com.cedaniel200.screenplay.dojo.stepdefinition;
 
+import com.cedaniel200.screenplay.dojo.models.Usuario;
+import com.cedaniel200.screenplay.dojo.tasks.IniciarSesion;
 import com.cedaniel200.screenplay.dojo.userinterfaces.InicioSesionPage;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.Before;
@@ -11,6 +13,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class InicioSesionStepDefinition {
 
@@ -31,8 +34,9 @@ public class InicioSesionStepDefinition {
 
     @When("^Cesar se autentica$")
     public void cesarSeAutentica() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        theActorInTheSpotlight().attemptsTo(
+            IniciarSesion.conElUsuario(new Usuario("usuario", "contrasena"))
+        );
     }
 
     @Then("^Cesar debe ver la pagina de inicio$")
