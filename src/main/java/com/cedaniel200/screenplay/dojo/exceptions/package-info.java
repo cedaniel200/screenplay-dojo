@@ -4,4 +4,4 @@
  *
  * @author cedaniel200
  */
-package com.cedaniel200.screenplay.dojo.exception;
+package com.cedaniel200.screenplay.dojo.exceptions;

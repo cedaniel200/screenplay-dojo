@@ -6,9 +6,11 @@ Para configurar el ambiente necesario para realizar este dojo puedes seguir la s
 
 https://cedaniel200.blogspot.com/2019/08/configurando-mi-ambiente-de.html 
 
-En este el proyecto se podran encontrar más de 50 pasos como comentarios **TODO** que guiarán el dojo.
-Si en algún momento te quedas atascado, no te preocupes en la rama solucion encontrarás tags, cada uno de estos tags agrupa una serie 
-de pasos relacionados entre sí, por lo cual solo debes buscar el tag donde esta tu paso y seguir desde ahí.
+La guía del dojo está en [PASOS.md](PASOS.md): 56 pasos numerados y agrupados por bloque. Los diez
+primeros son la preparación del entorno (la guía del blog enlazada arriba); del 11 en adelante, el
+taller.
+Si en algún momento te quedas atascado, no te preocupes: en la rama solucion encontrarás tags, y cada tag agrupa una serie
+de pasos relacionados entre sí, por lo cual solo debes buscar el tag donde está tu paso y seguir desde ahí.
 
 Para lo anterior utilizar el comando:
 
@@ -20,13 +22,24 @@ En caso de que Git solicite un mensaje para el merge como se observa en la image
 
 puedes oprimir la tecla Escape **ESC** seguido de **:wq** y **Enter**.
 
-### Para correr el proyecto 
+### Requisitos
+
+* **JDK 17**: el proyecto compila y ejecuta con un toolchain de Java 17.
+* **Un navegador instalado** (Chrome por defecto). El driver lo descarga Selenium Manager.
+* **Una cuenta de GitHub**: el escenario se autentica en el sitio real.
+
+### Para correr el proyecto
+
+Crea una rama llamada `dojo` a partir de `master` antes de empezar, para no mezclar tu trabajo con el punto de partida.
 
 Una vez terminado cada uno de los pasos del dojo se podrá ejecutar con el comando
-    
-    clean test aggregate 
-    
-Este es el comando que correrá los tests y generará el reporte en la carpeta /target/site/serenity/
+
+    ./gradlew clean test aggregate
+
+Este es el comando que correrá los tests y generará el reporte en la carpeta `target/site/serenity/`.
+
+Mientras los pasos no estén implementados, el escenario falla con `io.cucumber.java.PendingException: TODO: implement me`.
+Eso es la señal de partida, no un error de configuración.
 
 ### NOTA
 
@@ -150,19 +163,19 @@ Estructura
 
 Al finalizar el dojo obtendras una estructura completa del proyecto similar a la siguiente:
 
-    + exception
+    + exceptions
         Clases que controlan las posibles excepciones técnicas y de negocios que se presentan durante la ejecución de pruebas
-    + model
+    + models
         Clases relacionadas con el modelo de dominio y sus respectivos builder cuando es necesario
-    + task
+    + tasks
         Clases que representan tareas que realiza el actor a nivel de proceso de negocio
-    + interaction
+    + interactions
         Clases que representan las interacciones directas con la interfaz de usuario
-    + userinterface
+    + userinterfaces
         Page Objects y Page Elements. Mapean los objetos de la interfaz de usuario
-    + question
+    + questions
         Objetos usados para consultar acerca del estado de la aplicación
-    + util
+    + utils
         Clases de utilidad
     + runner
         Clases que permiten correr los tests
@@ -171,6 +184,11 @@ Al finalizar el dojo obtendras una estructura completa del proyecto similar a la
     + features
         La representación de las historias en archivos cucumber
         
+### Nota de versión
+
+El proyecto migró a **Serenity BDD 5.4.1**, **Cucumber 8 sobre JUnit Platform**, **Gradle 9.8.2** y **Java 17**.
+La estructura de paquetes está en plural y el runner es una suite de JUnit Platform (`InicioSesionTestSuite`).
+
 ### Referencias
 
 http://thucydides.info/docs/serenity-staging/#_serenity_and_the_screenplay_pattern

@@ -4,4 +4,4 @@
  *
  * @author cedaniel200
  */
-package com.cedaniel200.screenplay.dojo.userinterface;
+package com.cedaniel200.screenplay.dojo.userinterfaces;
