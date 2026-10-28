@@ -3,4 +3,4 @@
  *
  * @author cedaniel200
  */
-package com.cedaniel200.screenplay.dojo.task;
+package com.cedaniel200.screenplay.dojo.tasks;

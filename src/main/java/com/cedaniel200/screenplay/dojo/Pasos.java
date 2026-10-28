@@ -1,3 +1,5 @@
+package com.cedaniel200.screenplay.dojo;
+
 public class Pasos {
     // TODO 24 Crear el paquetes task dentro del paquete base
     // TODO 25 Crear el paquetes model dentro del paquete base

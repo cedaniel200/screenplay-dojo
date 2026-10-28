@@ -1,48 +1,52 @@
-group 'com.cedaniel200.screenplay'
-version '1.0-SNAPSHOT'
-
-apply plugin: 'java'                            // Agrega compilación de Java junto con capacidades de prueba y agrupación a un proyecto. Sirve de base para muchos de los otros complementos de Gradle de lenguaje JVM.
-apply plugin: 'idea'                            // Genera archivos que utiliza IntelliJ IDEA, lo que permite abrir el proyecto desde IDEA ( File- Open Project)
-apply plugin: 'eclipse'                         // Genera archivos que son utilizados por el IDE de Eclipse, lo que permite importar el proyecto a Eclipse  (File - Import…​ - Existing Projects into Workspace)
-apply plugin: 'net.serenity-bdd.aggregator'     // Agrega las tareas relacionadas con SerenityBDD entre ellas aggregate que nos permite generar la documentación
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
-    mavenLocal()
-    jcenter()
-}
-
 buildscript {
     repositories {
         mavenCentral()
-        mavenLocal()
-        jcenter()
     }
     ext {
-        junitVersion = '4.12'
-        slf4jVersion = '1.7.7'
-        serenityVersion = '2.0.17'
-        serenityCucumberVersion = '1.9.20'
+        serenityGradlePluginVersion = '2.4.34'
+        serenityVersion = '5.4.1'
+        cucumberPlatformVersion = '8.0.4'
+        junitPlatformSuiteVersion = '6.1.3'
+        slf4jVersion = '2.0.20'
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:$rootProject.ext.serenityVersion")
+        classpath("net.serenity-bdd:serenity-gradle-plugin:$rootProject.ext.serenityGradlePluginVersion")
     }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group = 'com.cedaniel200.screenplay'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation "junit:junit:$rootProject.ext.junitVersion"
-    testImplementation "org.slf4j:slf4j-simple:$rootProject.ext.slf4jVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityVersion"
+
     testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
-    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
-    compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
-    compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
-    compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    testImplementation "io.cucumber:cucumber-junit-platform-engine:$rootProject.ext.cucumberPlatformVersion"
+    testImplementation "org.junit.platform:junit-platform-suite:$rootProject.ext.junitPlatformSuiteVersion"
+    testImplementation "org.slf4j:slf4j-simple:$rootProject.ext.slf4jVersion"
 }
 
 tasks.withType(Test) {
-    systemProperties = System.properties
+    useJUnitPlatform()
+    systemProperties = gradle.startParameter.systemPropertiesArgs
     maxParallelForks = Runtime.runtime.availableProcessors()
 }
- gradle.startParameter.continueOnFailure = true
+
+gradle.startParameter.continueOnFailure = true

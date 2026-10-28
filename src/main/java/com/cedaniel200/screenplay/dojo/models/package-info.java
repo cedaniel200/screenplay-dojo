@@ -3,4 +3,4 @@
  *
  * @author cedaniel200
  */
-package com.cedaniel200.screenplay.dojo.model;
+package com.cedaniel200.screenplay.dojo.models;

@@ -1,39 +1,5 @@
-#JAVA
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-#INTELLIJ IDEA
-# User-specific stuff:
-.idea/
-*.iml
-out/
-
-#Serenity
 target/
 build/
-
-#gradle
 .gradle/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-#Sonar
-sonar-project.properties
+.idea/
+*.iml

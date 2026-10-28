@@ -4,4 +4,4 @@
  *
  * @author cedaniel200
  */
-package com.cedaniel200.screenplay.dojo.question;
+package com.cedaniel200.screenplay.dojo.questions;
