@@ -14,6 +14,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static com.cedaniel200.screenplay.dojo.models.UsuarioBuilder.unUsuarioPorDefecto;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.core.Is.is;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -43,7 +44,7 @@ public class InicioSesionStepDefinition {
 
     @Then("^Cesar debe ver la pagina de inicio$")
     public void cesarDebeVerLaPaginaDeInicio() {
-        theActorInTheSpotlight().should(seeThat(LaPaginaDeInicio.esVisible())
+        theActorInTheSpotlight().should(seeThat(LaPaginaDeInicio.esVisible(), is(true))
                 .orComplainWith(AutenticacionFallidaError.class, "authentication failed"));
     }
 
