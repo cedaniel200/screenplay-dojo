@@ -23,6 +23,9 @@ La guía con el orden de los ejercicios está en
 [`Pasos.java`](src/main/java/com/cedaniel200/screenplay/dojo/Pasos.java): los `TODO` numerados son
 el recorrido recomendado.
 
+> **Para empezar el taller**, crea una rama llamada `dojo` a partir de `master`. Así `master` queda
+> como punto de partida y tu trabajo no se mezcla con él.
+
 ## Requisitos
 
 - **JDK 17**. El build fija un toolchain de Java 17.
