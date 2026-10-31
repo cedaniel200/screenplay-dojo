@@ -1,4 +1,11 @@
 # Screenplay - dojo
+
+![Java](https://img.shields.io/badge/Java-17-blue?style=flat-square&logo=openjdk&logoColor=white)
+![Serenity BDD](https://img.shields.io/badge/Serenity%20BDD-5.4.1-4CAF50?style=flat-square)
+![Cucumber](https://img.shields.io/badge/Cucumber-8.0.4-23D96C?style=flat-square&logo=cucumber&logoColor=black)
+![Gradle](https://img.shields.io/badge/Gradle-9.8.2-02303A?style=flat-square&logo=gradle&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+
 Este dojo es un punto de partida para todas aquellas personas que quieran aprender acerca de la construcción 
 de automatizaciones para pruebas funcionales de aplicaciones Web.
 
